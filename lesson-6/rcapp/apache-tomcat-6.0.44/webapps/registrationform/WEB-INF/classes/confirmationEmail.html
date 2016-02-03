@@ -1,0 +1,45 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Rule Financial Registration Confirmation</title>
+</head>
+<style>
+	html, body {
+		color: #003f72;
+		font-family: Arial Unicode MS, Arial, sans-serif;
+		font-size: 16px;
+	}
+	
+	h1 {
+		font-size: 18px;
+		margin: 5px 0;
+	}
+	
+	a {
+		color: #227fa7;
+	}
+	
+	#terms {
+		font-size: small;
+	}
+</style>
+<body>
+
+<h1> Hi ${registration.firstName} ${registration.lastName}, thank you for your registration in Rule Financial Testwarez Competition.</h1>
+
+<div>
+	Please confirm your registration by clicking the following confirmation link: 
+	<a href="http://testwarez.rulefinancial.com/registrationform/registrations/${registration.authKey}">
+		confirm your registration
+	</a>
+	<br/><br/> 
+	If you have any problem please contact our representative.
+	<br/><br/>
+	Rule Financial Team.
+	<br/><br/>
+	<div id="terms">Statute is available in Rule Financial’s stand.</div>
+	
+</div>
+
+</body>
+</html>

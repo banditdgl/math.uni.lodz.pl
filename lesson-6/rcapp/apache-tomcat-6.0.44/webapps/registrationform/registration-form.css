@@ -1,0 +1,163 @@
+/** Add css rules here for your application. */
+
+
+/** Example rules used by the template application (remove for your app) */
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #777777;
+  margin: 40px 0px 70px;
+  text-align: center;
+}
+
+.sendButton {
+  display: block;
+  font-size: 16pt;
+}
+
+/** Most GWT widgets already have a style name defined */
+.gwt-DialogBox {
+  width: 400px;
+}
+
+.dialogVPanel {
+  margin: 5px;
+}
+
+.serverResponseLabelError {
+  color: red;
+}
+
+/** Set ids using widget.getElement().setId("idOfElement") */
+#closeButton {
+  margin: 15px 6px 6px;
+}
+
+
+html, body {
+    color: #333 !important;
+    font-size: 16px !important;
+}
+
+label {
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+    margin-top: 7px;
+    text-align: right;
+    width: 200px;
+    vertical-align: top;
+}
+
+input, textarea {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+    float: left;
+    font-size: 16px;
+    outline: 0;
+    width: 310px;
+}
+
+input:focus, textarea:focus {
+    border: 1px solid #227fa7;
+    -webkit-box-shadow: 0 0 5px #76c6ce;
+    box-shadow: 0 0 5px #76c6ce;
+}
+
+.gwt-CheckBox {
+	display: block;
+	position: relative;
+	float:left;
+	margin: 10px;
+    padding-left: 220px;
+}
+
+.gwt-CheckBox label {
+    display: inline;
+    float: right;
+    text-align:justify;
+	text-justify:inter-word;
+    width: auto;
+}
+
+.gwt-CheckBox input {
+    float: none;
+    width: auto;
+}
+
+.gwt-TextBox {
+    padding: 5px !important;
+}
+
+.control-group {
+    line-height: 22px;
+    margin: 15px 0;
+    overflow: hidden;
+}
+
+.control-group .gwt-Label {
+    clear: left;
+    font-size: 12px;
+    line-height: 1.4;
+    padding-left: 220px;
+}
+
+.form-buttons {
+    margin-left: 220px;
+}
+
+.gwt-Button {
+    background: #003f72 !important;
+    border: none !important;
+    border-radius: 5px 0 5px 0;
+    color: #fff;
+    font-size: 16px !important;
+    line-height: 24px;
+    padding: 5px 10px !important;
+    outline: 0;
+}
+
+.gwt-Button:hover, .gwt-Button:focus {
+    background: #316497 !important;
+}
+
+.gwt-Button:focus {
+    -webkit-box-shadow: 0 0 5px #76c6ce;
+    box-shadow: 0 0 5px #76c6ce;
+}
+
+.gwt-Button:active {
+    background: #f46800 !important;
+}
+
+.gwt-Button[disabled] {
+    background: #aab9d4 !important;
+}
+
+.gwt-TextArea {
+	height: 100px;
+	max-width: 350px;
+}
+
+.form-buttons .gwt-Button {
+    margin: 30px 10px 30px 0;
+}
+
+.rf-logo {
+    background: url('logo_full.png') no-repeat;
+    display: block;
+    height: 190px;
+    margin: 60px auto;
+    text-indent: -9999em;
+    white-space: nowrap;
+    width: 500px;
+}
+
+#reCaptcha {
+	margin-left: 220px;
+	width: auto;
+}

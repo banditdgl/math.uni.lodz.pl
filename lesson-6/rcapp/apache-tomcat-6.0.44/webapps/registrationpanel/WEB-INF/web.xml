@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+                        http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+                        version="3.0">
+    <display-name>Registration Form Administrative Panel Web Application</display-name>
+    	
+    <context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>/WEB-INF/registration-panel-configuration.xml</param-value>
+	</context-param>
+    
+	<listener>
+		<listener-class>
+			org.springframework.web.context.ContextLoaderListener
+		</listener-class>
+	</listener>
+    
+	<!-- Servlets -->
+	<servlet>
+		<servlet-name>registrationsServlet</servlet-name>
+		<servlet-class>com.rulefinancial.testconference.panel.server.RegistrationsServiceImpl</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>questionsServlet</servlet-name>
+		<servlet-class>com.rulefinancial.testconference.panel.server.QuestionsServiceImpl</servlet-class>
+	</servlet>
+    <servlet>
+        <servlet-name>bonusPrizesServlet</servlet-name>
+        <servlet-class>com.rulefinancial.testconference.panel.server.BonusPrizesServiceImpl</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>prizesServlet</servlet-name>
+        <servlet-class>com.rulefinancial.testconference.panel.server.PrizeServiceImpl</servlet-class>
+    </servlet>
+	<servlet>
+		<servlet-name>RegistrationsExportServlet</servlet-name>
+		<servlet-class>com.rulefinancial.testconference.panel.server.RegistrationsExportServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>registrationsServlet</servlet-name>
+		<url-pattern>/registrationpanel/registrationsmanagement</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>questionsServlet</servlet-name>
+		<url-pattern>/registrationpanel/questionsmanagement</url-pattern>
+	</servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>bonusPrizesServlet</servlet-name>
+        <url-pattern>/registrationpanel/bonusprizesmanagement</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>prizesServlet</servlet-name>
+        <url-pattern>/registrationpanel/prizemanagement</url-pattern>
+    </servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RegistrationsExportServlet</servlet-name>
+		<url-pattern>/registrationpanel/registrationsexportservlet</url-pattern>
+	</servlet-mapping>
+
+	<!-- Basic Security Configuration -->
+	
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>Registrations Manager Authentication</web-resource-name>
+			<url-pattern>/*</url-pattern>
+			<http-method>GET</http-method>
+			<http-method>POST</http-method>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>registrations-manager</role-name>
+		</auth-constraint>
+
+		<user-data-constraint>		
+			<transport-guarantee>NONE</transport-guarantee>
+		</user-data-constraint>
+	</security-constraint>
+
+	<login-config>
+		<auth-method>BASIC</auth-method>
+	</login-config>
+
+	<!-- Default page to serve -->
+	<welcome-file-list>
+		<welcome-file>registrationpanel.html</welcome-file>
+	</welcome-file-list>
+
+</web-app>

@@ -1,0 +1,2 @@
+serviceClass: com.rulefinancial.testconference.panel.shared.QuestionsService
+path: DC2556380C9E94DD15D3093CDEBCAE9B.gwt.rpc

@@ -1,0 +1,6 @@
+# Module registrationpanel
+# RPC service class, partial path of RPC policy file
+com.rulefinancial.testconference.panel.shared.BonusPrizesService, 935925491427EAF01AC80853287FAE73.gwt.rpc
+com.rulefinancial.testconference.panel.shared.QuestionsService, DC2556380C9E94DD15D3093CDEBCAE9B.gwt.rpc
+com.rulefinancial.testconference.panel.shared.RegistrationsService, 732BE5589EAC136D16CDD71003B9C98D.gwt.rpc
+com.rulefinancial.testconference.panel.shared.PrizeService, 773B0DB39D95569CF14AF34EB26792CF.gwt.rpc

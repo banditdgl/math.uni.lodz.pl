@@ -1,0 +1,2 @@
+serviceClass: com.rulefinancial.testconference.panel.shared.BonusPrizesService
+path: 935925491427EAF01AC80853287FAE73.gwt.rpc

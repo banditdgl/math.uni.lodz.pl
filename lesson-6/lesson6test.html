@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8080/" />
+<title>TestRegistrationForm</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TestRegistrationForm</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/registrationform/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Rule Financial Registration Form</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=firstName</td>
+	<td>imie</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>name=firstName</td>
+	<td>imie</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=lastName</td>
+	<td>nazwisko</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>name=lastName</td>
+	<td>nazwisko</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{&quot;email&quot; + Math.floor(Math.random()*100000000) + &quot;@gft.com&quot;}</td>
+	<td>emailadr</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=email</td>
+	<td>${emailadr}</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>name=email</td>
+	<td>${emailadr}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=repeatEmail</td>
+	<td>${emailadr}</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>name=repeatEmail</td>
+	<td>${emailadr}</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[text()='SQL'])</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[text()='SQL'])</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.GOFRIDJCOI</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=strong</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=gwt-uid-23</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=gwt-uid-26</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[text()='Save'])</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

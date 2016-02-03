@@ -1,0 +1,2 @@
+serviceClass: com.rulefinancial.testconference.panel.shared.RegistrationsService
+path: 732BE5589EAC136D16CDD71003B9C98D.gwt.rpc

@@ -1,0 +1,7 @@
+151112 20:19:18 [Note] Plugin 'FEDERATED' is disabled.
+151112 20:19:18  InnoDB: Initializing buffer pool, size = 8.0M
+151112 20:19:18  InnoDB: Completed initialization of buffer pool
+151112 20:19:18  InnoDB: Started; log sequence number 0 373595
+151112 20:19:18 [Note] Event Scheduler: Loaded 0 events
+151112 20:19:18 [Note] mysqld: ready for connections.
+Version: '5.1.72-community'  socket: ''  port: 3306  MySQL Community Server (GPL)
